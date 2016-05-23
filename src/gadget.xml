@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gadget>
+  <name>.:IntelCoreSeries:.</name>
+  <namespace>intelcoreseries</namespace>
+  <version>2.5</version>
+  <author name="Orbmu2k">
+    <info url="http://blog.orbmu2k.de" text="Orbmu2k Blog" />
+    <logo src="images/chip48.png" />
+  </author>
+  <copyright>© 2011 by Orbmu2k</copyright>
+  <description>Intel Core Series Gadget reads the Temperatures and Clock directly from Intels MSR using OpenLibSys WinRing0 Driver</description>
+  <icons>
+    <icon height="48" width="48" src="images/qcu_scr.png" />
+  </icons>
+  <hosts>
+    <host name="sidebar">
+      <base type="HTML" apiVersion="1.0.0.0" src="index.html" />
+      <permissions>Full</permissions>
+      <platform minPlatformVersion="1.0" />
+      <defaultImage src="images/qcu_scr.png" />
+    </host>
+  </hosts>
+</gadget>
