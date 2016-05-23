@@ -1,0 +1,88 @@
+<html>
+<head>
+	<title>IntelCore2 Settings</title>
+	<style type="text/css">body{width:310;height:400;}</style>
+	<script type="text/javascript" language="javascript" src="script.js"></script>
+	<script type="text/javascript" language="javascript" src="settings.js"></script>
+</head>
+
+<body onload="AV()" onunload="AW()">
+	<div id="Cx"></div>
+	<span style="font-family: Arial;font-size:12;">
+		<b style="width:280;">Graph Style:</b>
+		<select id="Cy" style="width:280;font-family: Arial;font-size:12;">
+			<option value="0">Graph Threads</option>
+			<option value="1">Filled Threads</option>
+			<option value="2">Graph Total</option>
+			<option value="3">Filled Total</option>
+			<option value="4">Graph Total + Temperature</option>
+			<option value="5">Filled Total + Temperature</option>
+			<option value="6">None</option>
+		</select>
+		<b style="width:280;">Background:</b>
+		<select name="CY" style="width: 280;font-family: Arial;font-size:12;">
+			<option value="orb">Orbmu2k</option>
+			<option value="red">Red</option>
+			<option value="green">Green</option>
+			<option value="blue">Blue</option>
+			<option value="purple">Purple</option>
+		</select>
+		<br />
+		<br />
+		<input type="checkbox" name="Cz" />
+		<label for="cbShowClock" style="width: 132;">
+			<b>Show CPU Clock</b>
+		</label>
+		<br />
+		<input type="checkbox" name="DA" />
+		<label for="cbDetectMaxClock" style="width: 270;">
+			Detect Max CPU Clock (for overclocking)
+		</label>
+		<input type="checkbox" name="DB" />
+		<label for="cbRealtimeClock" style="width: 270;">
+			Realtime CPU Clock (for desktop only)
+		</label>
+		<input type="checkbox" name="DC" />
+		<label for="cbMemoryUsage" style="width: 270;">
+			<b>Show Physical Memory Usage</b>
+		</label>
+		<br />
+		<input type="checkbox" name="DD" />
+		<label for="cbDecay" style="width: 270;">
+			<b>Decay Core Usage Bars</b>
+		</label>
+		<br />
+		<input type="checkbox" name="DE" />
+		<label style="width:140;" for="cbFahrenheit">
+			<b>Fahrenheit</b>
+		</label>
+		<b style="width:74;">TjMax (°C):</b>
+		<input style="width:40;top:197px;position:absolute;font-family: Arial;font-size:12;" id="DF" type="text" value="100"/>
+		<br />
+		<input type="checkbox" name="DG" />
+		<label for="cbStartupDelay" style="width: 270;">
+			<b>Reinitialize driver 30sec after startup</b>
+		</label>
+		<br />
+		<br />
+		<strong id="DH" style="text-align:left;font-family: Arial;font-size:13;">
+			WinRing0 Driver Status:
+		</strong>
+		<br />
+		<br />
+		System Driver:&nbsp; <strong id="DI" style="text-align:left;">TestPath</strong>
+		<br />
+		Driver Loaded:&nbsp; <strong id="DJ" style="text-align:left;">TestPath</strong>
+		<br />
+		Driver Folder:&nbsp; <strong id="DK" style="text-align:left;">TestPath</strong>
+		<br />
+		<input type="button" name="DL" style="width: 110;top:255px;left:174px;position:absolute;font-family: Arial;font-size:12;" value="Install Driver" onclick="Cn();" />
+		<input type="button" name="DM" style="width: 110;top:285px;left:174px;position:absolute;font-family: Arial;font-size:12;" value="Uninstall Driver" onclick="unCn();" />
+		<br />
+		&copy;2009 by Orbmu2k - &nbsp;<a href="http://blog.orbmu2k.de">blog.orbmu2k.de</a>
+		<br />
+		<br />
+		...powered by &nbsp;<a href="http://openlibsys.org">OpenLibSys.org</a>
+	</span>
+</body>
+</html>
